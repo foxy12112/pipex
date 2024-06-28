@@ -6,21 +6,25 @@
 #    By: ldick <ldick@student.42.fr>                +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/05/19 17:52:31 by ldick             #+#    #+#              #
-#    Updated: 2024/05/19 18:01:06 by ldick            ###   ########.fr        #
+#    Updated: 2024/06/28 12:46:41 by ldick            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = pipex
 obj_dir = obj/
 
-SRCS =	srcs/main.c
+SRCS =	srcs/main.c				\
+		srcs/utils/init.c		\
+		srcs/utils/parse.c		\
+		srcs/utils/free.c		\
+		srcs/utils/children.c	\
 
 COMPILER = cc
 OBJS_DIR = objs/
 
 OBJS = $(SRCS:.c=.o)
 
-# CFLAGS = -Wall -Wextra -Werror
+CFLAGS = -Wall -Wextra -Werror -g
 
 all: $(NAME)
 
