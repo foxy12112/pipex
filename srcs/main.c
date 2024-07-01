@@ -6,7 +6,7 @@
 /*   By: ldick <ldick@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/19 17:53:39 by ldick             #+#    #+#             */
-/*   Updated: 2024/06/28 12:42:58 by ldick            ###   ########.fr       */
+/*   Updated: 2024/07/01 09:53:50 by ldick            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,17 +37,12 @@ int	pipex(char **argv, char **env)
 	return (1);
 }
 
-// void	leaks(void)
-// {
-// 	system("leaks pipex");
-// }
-
 int	main(int argc, char *argv[], char **env)
 {
 	if (argc != 5)
 	{
 		perror("wrong number of arguments");
-		return (1);
+		return (127);
 	}
 	else
 		pipex(argv, env);

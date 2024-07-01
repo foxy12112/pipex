@@ -6,7 +6,7 @@
 /*   By: ldick <ldick@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/19 17:36:55 by ldick             #+#    #+#             */
-/*   Updated: 2024/06/28 12:47:18 by ldick            ###   ########.fr       */
+/*   Updated: 2024/07/01 09:55:58 by ldick            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,6 +43,5 @@ void		freepipe(t_pipex *pipex);
 char		*find_cmd(char **path, char *cmd);
 void		ft_child_one(t_pipex *pipex);
 void		ft_child_two(t_pipex *pipex);
-void		print_double_pointers(char **double_ptr);
 
 #endif

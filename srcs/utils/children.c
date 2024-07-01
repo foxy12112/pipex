@@ -6,7 +6,7 @@
 /*   By: ldick <ldick@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/20 10:57:19 by ldick             #+#    #+#             */
-/*   Updated: 2024/06/28 12:35:56 by ldick            ###   ########.fr       */
+/*   Updated: 2024/07/01 09:54:51 by ldick            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ void	ft_child_one(t_pipex *pipex)
 	cmd = find_cmd(pipex->path, pipex->command_1[0]);
 	if (!cmd)
 	{
-		freeall(pipex->command_1);
+		freepipe(pipex);
 		perror("Command Error");
 		exit(127);
 	}
@@ -43,7 +43,7 @@ void	ft_child_two(t_pipex *pipex)
 	cmd = find_cmd(pipex->path, pipex->command_2[0]);
 	if (!cmd)
 	{
-		freeall(pipex->command_2);
+		freepipe(pipex);
 		perror("Command Error");
 		exit(127);
 	}
@@ -52,21 +52,4 @@ void	ft_child_two(t_pipex *pipex)
 	free(cmd);
 	freeall(pipex->command_2);
 	exit(127);
-}
-
-void	print_double_pointers(char **double_ptr)
-{
-	int	i;
-
-	i = 0;
-	if (double_ptr == NULL)
-	{
-		printf("Null pointer.\n");
-		return ;
-	}
-	while (double_ptr[i] != NULL)
-	{
-		fprintf(stderr, "Element %d: %s\n", i, double_ptr[i]);
-		i++;
-	}
 }
