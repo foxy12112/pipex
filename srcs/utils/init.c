@@ -6,17 +6,17 @@
 /*   By: ldick <ldick@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/19 16:06:53 by ldick             #+#    #+#             */
-/*   Updated: 2024/06/28 11:18:53 by ldick            ###   ########.fr       */
+/*   Updated: 2024/07/21 13:45:10 by ldick            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../pipex.h"
+#include "pipex.h"
 
 t_pipex	*init(char *argv[], char **env)
 {
 	t_pipex	*pipex;
 
-	pipex = malloc(sizeof(t_pipex));
+	pipex = ft_calloc(sizeof(t_pipex), 1);
 	if (!pipex)
 		return (perror("malloc error"), NULL);
 	pipex->fd_in = open(argv[1], O_RDONLY);

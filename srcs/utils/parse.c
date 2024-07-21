@@ -6,11 +6,11 @@
 /*   By: ldick <ldick@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/19 16:33:23 by ldick             #+#    #+#             */
-/*   Updated: 2024/06/26 13:02:30 by ldick            ###   ########.fr       */
+/*   Updated: 2024/07/21 13:34:54 by ldick            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../pipex.h"
+#include "pipex.h"
 
 char	*find_path(char **env)
 {

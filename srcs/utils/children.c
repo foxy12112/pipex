@@ -6,11 +6,11 @@
 /*   By: ldick <ldick@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/20 10:57:19 by ldick             #+#    #+#             */
-/*   Updated: 2024/07/01 09:54:51 by ldick            ###   ########.fr       */
+/*   Updated: 2024/07/21 13:34:59 by ldick            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../pipex.h"
+#include "pipex.h"
 
 void	ft_child_one(t_pipex *pipex)
 {

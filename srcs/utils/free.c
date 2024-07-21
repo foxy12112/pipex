@@ -6,11 +6,11 @@
 /*   By: ldick <ldick@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/20 10:51:57 by ldick             #+#    #+#             */
-/*   Updated: 2024/06/28 12:24:27 by ldick            ###   ########.fr       */
+/*   Updated: 2024/07/21 13:34:43 by ldick            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../pipex.h"
+#include "pipex.h"
 
 void	freeall(char **list)
 {

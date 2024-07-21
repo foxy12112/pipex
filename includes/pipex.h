@@ -6,14 +6,14 @@
 /*   By: ldick <ldick@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/19 17:36:55 by ldick             #+#    #+#             */
-/*   Updated: 2024/07/01 09:55:58 by ldick            ###   ########.fr       */
+/*   Updated: 2024/07/21 13:46:45 by ldick            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef PIPEX_H
 # define PIPEX_H
 
-# include "main-libs/libs.h"
+# include "libs.h"
 # include <fcntl.h>
 # include <stdio.h>
 # include <stdlib.h>

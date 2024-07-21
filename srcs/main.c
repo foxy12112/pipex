@@ -6,11 +6,11 @@
 /*   By: ldick <ldick@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/19 17:53:39 by ldick             #+#    #+#             */
-/*   Updated: 2024/07/01 09:53:50 by ldick            ###   ########.fr       */
+/*   Updated: 2024/07/21 13:35:08 by ldick            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../pipex.h"
+#include "pipex.h"
 
 int	pipex(char **argv, char **env)
 {
@@ -33,6 +33,10 @@ int	pipex(char **argv, char **env)
 		return (perror("fork error"), freepipe(pipex), 1);
 	if (pid2 == 0)
 		ft_child_two(pipex);
+	close(pipex->pipes[0]);
+	close(pipex->pipes[1]);
+	waitpid(pid1, NULL, 0);
+	waitpid(pid2, NULL, 0);
 	freepipe(pipex);
 	return (1);
 }
